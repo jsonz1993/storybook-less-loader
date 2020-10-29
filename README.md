@@ -9,7 +9,10 @@ Add less loader with storybook
     module.exports = {
       ...,
       webpackFinal: async (config) => {
-        const includeLessConfig = useLessLoader(config)
+        const includeLessConfig = useLessLoader(config, function(lessLoaderRule) {
+          // do something
+          return lessLoaderRule
+        })
         return includeLessConfig
       }
     }
