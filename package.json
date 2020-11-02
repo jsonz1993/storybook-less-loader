@@ -4,7 +4,10 @@
   "description": "storybook less loader",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release-patch": "npm version patch",
+    "release-minor": "npm version minor",
+    "release-major": "npm version major"
   },
   "keywords": [
     "storybook",
@@ -17,5 +20,5 @@
     "type": "git",
     "url": "https://github.com/jsonz1993/storybook-less-loader.git"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
